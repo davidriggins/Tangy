@@ -6,6 +6,8 @@ using Tangy_Business.Repository.IRepository;
 using Tangy_DataAccess.Data;
 using TangyWeb_Server.Data;
 
+//Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NTQ2OTEyQDMxMzkyZTMzMmUzMEtudFBaUUtCOVBjV0JnMTRZV0tMZEYxMnAyN2R3RFJ3WVhHWVRGeFJGSk09");
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
