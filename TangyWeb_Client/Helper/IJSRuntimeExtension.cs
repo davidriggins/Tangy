@@ -1,6 +1,6 @@
 ﻿using Microsoft.JSInterop;
 
-namespace TangyWeb_Server.Helper
+namespace TangyWeb_Client.Helper
 {
     public static class IJSRuntimeExtension
     {
