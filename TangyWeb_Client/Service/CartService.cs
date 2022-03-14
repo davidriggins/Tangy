@@ -33,7 +33,7 @@ namespace TangyWeb_Client.Service
                 if (obj.ProductId == cartToIncrement.ProductId && obj.ProductPriceId == cartToIncrement.ProductPriceId)
                 {
                     itemInCart = true;
-                    obj.Count+= cartToIncrement.Count;
+                    obj.Count += cartToIncrement.Count;
                 }
             }
 
@@ -57,11 +57,11 @@ namespace TangyWeb_Client.Service
             var cart = await _localStorage.GetItemAsync<List<ShoppingCart>>(SD.ShoppingCart);
 
             // If count is 0 or 1, then we remove the item
-            for(int i = 0; i < cart.Count; i++)
+            for (int i = 0; i < cart.Count; i++)
             {
                 if (cart[i].ProductId == cartToDecrement.ProductId && cart[i].ProductPriceId == cartToDecrement.ProductPriceId)
                 {
-                    if (cart[i].Count == 1 || cart[i].Count == 0)
+                    if (cart[i].Count == 1 || cartToDecrement.Count == 0)
                     {
                         cart.Remove(cart[i]);
                     }
